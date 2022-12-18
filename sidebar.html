@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Sidebar </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    
+<style>
+    body{
+        font-family: 'Roboto',sans-serif;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+    .rol{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .sidebar{
+        padding: 10px;
+        position: fixed;
+        left: 0px;
+        width: 250px;
+        height: 100%;
+        
+        background: #042331;
+    }
+    
+    .sidebar header{
+        font-size: 21px;
+        color: white;
+        padding-left: 20px;
+        line-height: 70px;
+        background: #063146;
+        user-select: none;
+    }
+    .sidebar ul a{
+        color: blue;
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 60px;
+        font-size: 18px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(26, 238, 69, 0.1);
+        border-bottom: 1px solid black;
+    }
+    ul li:hover a{
+        background-color: white;
+        padding-left: 50px;
+    }
+    .sidedar ul li a i {
+        margin-right: 16px;
+    }
+    .colm{
+    flex: 60%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: 280px;
+    font-size: 20px;
+    }
+
+
+
+</style>
+</head>
+<body>
+    <div class="rol">
+        <div class="sidebar">
+            <header>Menu </header>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house">Home</i></a></li>
+                <li><a href="#"><i class="fa-solid fa-gauge-high">Dashboard</i></a></li>
+                <div class="item">
+                    <ul>
+                        <li><a href="#">Item 1 </a></li>
+                        <li><a href="#">Item 2 </a></li>
+                    </ul>
+                </div>
+                <li><a href="#"><i class="fa-solid fa-bars">Orders</i></a></li>
+                <li><a href="#"><i class="fa-brands fa-bootstrap">Bootstrap</i></a></li>
+                <li><a href="#"><i class="fa-solid fa-diagram-project">Products</i></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-person-military-pointing">Customers</i></a></li>
+            </ul>
+        </div>
+        <div class="colm">
+            <h2> Left Sidebar with Submenus</h2><br>
+            <p>An example 2-level sidebar with collasible menu items. The menu functions like an</p>
+            <p>"accordion" where only a single menu is be open at a time. While the sidebar itself is not  </p>
+            <p>toggle-able, it does responsively shrink in width on smaller screens.</p>
+            <h3>Responsive</h3><br>
+            <p>shrinks in width, hides text labels and collapses to icons only on mobile </p>
+        </div>
+    </div>
+
+    
+         
+    
+</body>
+</html>
